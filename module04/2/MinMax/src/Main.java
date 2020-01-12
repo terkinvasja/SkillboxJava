@@ -4,7 +4,7 @@ public class Main {
         System.out.println(String.format("Short: Min = %s, Max = %s", Short.MIN_VALUE, Short.MAX_VALUE));
         System.out.println(String.format("Integer: Min = %s, Max = %s", Integer.MIN_VALUE, Integer.MAX_VALUE));
         System.out.println(String.format("Long: Min = %s, Max = %s", Long.MIN_VALUE, Long.MAX_VALUE));
-        System.out.println(String.format("Float: Min = %s, Max = %s", Float.MIN_VALUE, Float.MAX_VALUE));
-        System.out.println(String.format("Double: Min = %s, Max = %s", Double.MIN_VALUE, Double.MAX_VALUE));
+        System.out.println(String.format("Float: Min = %s, Max = %s", -Float.MAX_VALUE, Float.MAX_VALUE));
+        System.out.println(String.format("Double: Min = %s, Max = %s", -Double.MAX_VALUE, Double.MAX_VALUE));
     }
 }
