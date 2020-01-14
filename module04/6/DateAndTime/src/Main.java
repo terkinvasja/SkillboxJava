@@ -10,7 +10,7 @@ public class Main {
 
         int toDayYear = Calendar.getInstance().get(Calendar.YEAR);
         Calendar calendar = Calendar.getInstance();
-        calendar.set(1987, Calendar.APRIL, 02, 02, 00, 00);
+        calendar.set(1987, Calendar.APRIL, 2, 2, 0, 0);
 
         int years = toDayYear - calendar.get(Calendar.YEAR);
         for (int i = 0; i <= years; i++) {
