@@ -6,8 +6,8 @@ public class Main {
         text = text.replaceAll("[^0-9,]", "");
         String[] nums = text.split(",");
         int summa = 0;
-        for (int i = 0; i < nums.length; i++) {
-            summa += Integer.parseInt(nums[i]);
+        for (String num : nums) {
+            summa += Integer.parseInt(num);
         }
         System.out.println(summa);
     }
