@@ -2,14 +2,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Main {
 
-    private static boolean isDebugEnabled = true;
+    private static boolean isDebugEnabled = false;
 
     public static void main(String[] args) throws IOException {
 
-        LinkedList<ToDoTask> toDoTasks = new LinkedList<>();
+        List<ToDoTask> toDoTasks = new LinkedList<>();
 
         while (true) {
             System.out.print("Введите команду (LIST, ADD, EDIT, DELETE, EXIT): ");
