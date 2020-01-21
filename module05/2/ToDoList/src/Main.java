@@ -59,7 +59,11 @@ public class Main {
                             if (index == -1) {
                                 toDoTasks.add(new ToDoTask(comment));
                             } else {
-                                toDoTasks.add(index, new ToDoTask(comment));
+                                try {
+                                    toDoTasks.add(index, new ToDoTask(comment));
+                                } catch (IndexOutOfBoundsException e) {
+                                    System.out.println("Введен неверный индекс. Количество задач в списке: " + toDoTasks.size());
+                                }
                             }
                         } else {
                             comment = str.substring(firstSpace + 1);
@@ -76,6 +80,8 @@ public class Main {
                                 toDoTasks.get(index).setComment(comment);
                             } catch (NumberFormatException e) {
                                 errorMessage();
+                            } catch (IndexOutOfBoundsException e) {
+                                System.out.println("Введен неверный индекс. Количество задач в списке: " + toDoTasks.size());
                             }
                         } else {
                             errorMessage();
